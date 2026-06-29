@@ -1,0 +1,27 @@
+name: Terraform Pipeline2
+on: [ pull_request, push, create ]
+
+jobs:
+  ermetic:
+    name: Ermetic
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    permissions:
+      security-events: write
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v3
+      - name: Scan IaC with Tenable Cloud Security
+        uses: tenable/cloud-security-actions/iac/scan@v1
+        with:
+          api-token: ${{ secrets.TENABLE_API_TOKEN }}
+          api-url: https://app.dev.t.io
+          output-file-formats: sarif
+          
+      - name: Display file content
+        run: cat results.sarif
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif
