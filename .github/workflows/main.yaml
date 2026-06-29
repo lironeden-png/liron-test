@@ -18,9 +18,9 @@ jobs:
           api-token: ${{ secrets.TENABLE_API_TOKEN }}
           api-url: https://app.dev.t.io
           output-file-formats: sarif
-      # - name: Fix SARIF file paths
-      #   run: |
-      #     sed -i 's|https://github.com/lironeden-png/liron-test/blob/[0-9a-f]*/||g' results.sarif
+      - name: Fix SARIF file paths
+        run: |
+          sed -i 's|https://github.com/lironeden-png/liron-test/blob/[0-9a-f]*/||g' results.sarif
       - name: Display file content
         run: cat results.sarif
       - name: Upload SARIF file
