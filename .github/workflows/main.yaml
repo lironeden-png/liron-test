@@ -21,6 +21,33 @@ jobs:
       - name: Fix SARIF file paths
         run: |
           sed -i 's|https://github.com/lironeden-png/liron-test/blob/[0-9a-f]*/||g' results.sarif
+      - name: Split multi-location results into one alert each
+        run: |
+          jq '
+          .runs |= map(
+            (.tool.driver.rules // []) as $rules
+            | ([ $rules | to_entries[] | { key: .value.id, value: .key } ] | from_entries) as $ruleIndex
+            | .results = [
+                (.results // [])[] as $r
+                | ($r.locations // [null])[] as $loc
+                | $r
+                | (if $loc == null then .locations = [] else .locations = [$loc] end)
+                | (if $loc != null
+                     then .partialFingerprints = ((.partialFingerprints // {}) + {
+                            primaryLocationLineHash: (
+                              (($r.ruleId // "") | tostring) + "|"
+                              + (($loc.physicalLocation.artifactLocation.uri // "") | tostring) + "|"
+                              + (($loc.physicalLocation.region.startLine // 0) | tostring) + ":"
+                              + (($loc.physicalLocation.region.startColumn // 0) | tostring)
+                            )
+                          })
+                     else . end)
+                | (if ($r.ruleId != null and $ruleIndex[$r.ruleId] != null)
+                     then .ruleIndex = $ruleIndex[$r.ruleId]
+                     else . end)
+              ]
+          )
+          ' results.sarif > results.tmp.sarif && mv results.tmp.sarif results.sarif
       - name: Display file content
         run: cat results.sarif
       - name: Upload SARIF file
