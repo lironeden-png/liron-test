@@ -100,6 +100,13 @@ resource "aws_ebs_volume" "unencrypted" {
   encrypted         = false
 }
 
+# EBS volume without encryption -> Medium
+resource "aws_ebs_volume" "unencrypted" {
+  availability_zone = "us-east-1a"
+  size              = 10
+  encrypted         = false
+}
+
 #############################################
 # LOW — logging / hardening disabled
 #############################################
