@@ -1,11 +1,10 @@
 name: Terraform Pipeline2
-on: [ pull_request, push, create ]
+on: [ pull_request, push ]
 
 jobs:
   ermetic:
     name: Ermetic
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request'
     permissions:
       security-events: write
       contents: read
@@ -53,5 +52,5 @@ jobs:
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: tmp/results.sarif
+          sarif_file: results.sarif
 
