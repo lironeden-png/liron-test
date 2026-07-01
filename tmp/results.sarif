@@ -290,7 +290,7 @@
         },
         {
           "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-s3-bucket-https-only-disabled:vulnerable.tf:64"
+            "codeScanner/resourceRiskV1": "aws-athena-workgroup-encryption-disabled:vulnerable.tf:92"
           },
           "attachments": [],
           "codeFlows": [],
@@ -312,8 +312,8 @@
                 "region": {
                   "byteOffset": -1,
                   "charOffset": -1,
-                  "endLine": 64,
-                  "startLine": 64
+                  "endLine": 92,
+                  "startLine": 92
                 }
               },
               "properties": {
@@ -324,18 +324,18 @@
           ],
           "message": {
             "arguments": [],
-            "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+            "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
           },
           "rank": -1,
           "relatedLocations": [],
-          "ruleId": "aws-s3-bucket-https-only-disabled",
+          "ruleId": "aws-athena-workgroup-encryption-disabled",
           "ruleIndex": 6,
           "stacks": [],
           "taxa": []
         },
         {
           "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-https-only-disabled:vulnerable.tf:128"
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-https-only-disabled:vulnerable.tf:135"
           },
           "attachments": [],
           "codeFlows": [],
@@ -357,8 +357,8 @@
                 "region": {
                   "byteOffset": -1,
                   "charOffset": -1,
-                  "endLine": 128,
-                  "startLine": 128
+                  "endLine": 135,
+                  "startLine": 135
                 }
               },
               "properties": {
@@ -375,51 +375,6 @@
           "relatedLocations": [],
           "ruleId": "aws-cloudfront-distribution-https-only-disabled",
           "ruleIndex": 7,
-          "stacks": [],
-          "taxa": []
-        },
-        {
-          "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-ec2-volume-encryption-disabled:vulnerable.tf:100"
-          },
-          "attachments": [],
-          "codeFlows": [],
-          "fixes": [],
-          "graphTraversals": [],
-          "graphs": [],
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "annotations": [],
-              "id": -1,
-              "logicalLocations": [],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "index": -1,
-                  "uri": "vulnerable.tf"
-                },
-                "region": {
-                  "byteOffset": -1,
-                  "charOffset": -1,
-                  "endLine": 100,
-                  "startLine": 100
-                }
-              },
-              "properties": {
-                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
-              },
-              "relationships": []
-            }
-          ],
-          "message": {
-            "arguments": [],
-            "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
-          },
-          "rank": -1,
-          "relatedLocations": [],
-          "ruleId": "aws-ec2-volume-encryption-disabled",
-          "ruleIndex": 8,
           "stacks": [],
           "taxa": []
         },
@@ -464,97 +419,7 @@
           "rank": -1,
           "relatedLocations": [],
           "ruleId": "aws-s3-bucket-object-mfa-delete-disabled",
-          "ruleIndex": 9,
-          "stacks": [],
-          "taxa": []
-        },
-        {
-          "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-athena-workgroup-encryption-disabled:vulnerable.tf:92"
-          },
-          "attachments": [],
-          "codeFlows": [],
-          "fixes": [],
-          "graphTraversals": [],
-          "graphs": [],
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "annotations": [],
-              "id": -1,
-              "logicalLocations": [],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "index": -1,
-                  "uri": "vulnerable.tf"
-                },
-                "region": {
-                  "byteOffset": -1,
-                  "charOffset": -1,
-                  "endLine": 92,
-                  "startLine": 92
-                }
-              },
-              "properties": {
-                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
-              },
-              "relationships": []
-            }
-          ],
-          "message": {
-            "arguments": [],
-            "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
-          },
-          "rank": -1,
-          "relatedLocations": [],
-          "ruleId": "aws-athena-workgroup-encryption-disabled",
-          "ruleIndex": 10,
-          "stacks": [],
-          "taxa": []
-        },
-        {
-          "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-s3-bucket-encryption-disabled:vulnerable.tf:64"
-          },
-          "attachments": [],
-          "codeFlows": [],
-          "fixes": [],
-          "graphTraversals": [],
-          "graphs": [],
-          "kind": "fail",
-          "level": "warning",
-          "locations": [
-            {
-              "annotations": [],
-              "id": -1,
-              "logicalLocations": [],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "index": -1,
-                  "uri": "vulnerable.tf"
-                },
-                "region": {
-                  "byteOffset": -1,
-                  "charOffset": -1,
-                  "endLine": 64,
-                  "startLine": 64
-                }
-              },
-              "properties": {
-                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
-              },
-              "relationships": []
-            }
-          ],
-          "message": {
-            "arguments": [],
-            "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
-          },
-          "rank": -1,
-          "relatedLocations": [],
-          "ruleId": "aws-s3-bucket-encryption-disabled",
-          "ruleIndex": 11,
+          "ruleIndex": 8,
           "stacks": [],
           "taxa": []
         },
@@ -599,7 +464,97 @@
           "rank": -1,
           "relatedLocations": [],
           "ruleId": "aws-cloudtrail-trail-encryption-disabled",
-          "ruleIndex": 12,
+          "ruleIndex": 9,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-volume-encryption-disabled:vulnerable.tf:100"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 100,
+                  "startLine": 100
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-volume-encryption-disabled",
+          "ruleIndex": 10,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-volume-encryption-disabled:vulnerable.tf:107"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 107,
+                  "startLine": 107
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-volume-encryption-disabled",
+          "ruleIndex": 10,
           "stacks": [],
           "taxa": []
         },
@@ -644,13 +599,103 @@
           "rank": -1,
           "relatedLocations": [],
           "ruleId": "aws-kms-key-rotation-disabled",
+          "ruleIndex": 11,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-encryption-disabled:vulnerable.tf:64"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 64,
+                  "startLine": 64
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-encryption-disabled",
+          "ruleIndex": 12,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-https-only-disabled:vulnerable.tf:64"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 64,
+                  "startLine": 64
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-https-only-disabled",
           "ruleIndex": 13,
           "stacks": [],
           "taxa": []
         },
         {
           "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-web-acl-not-exists:vulnerable.tf:108"
+            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-log-group-disabled:vulnerable.tf:85"
           },
           "attachments": [],
           "codeFlows": [],
@@ -672,8 +717,8 @@
                 "region": {
                   "byteOffset": -1,
                   "charOffset": -1,
-                  "endLine": 108,
-                  "startLine": 108
+                  "endLine": 85,
+                  "startLine": 85
                 }
               },
               "properties": {
@@ -684,11 +729,11 @@
           ],
           "message": {
             "arguments": [],
-            "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+            "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
           },
           "rank": -1,
           "relatedLocations": [],
-          "ruleId": "aws-cloudfront-distribution-web-acl-not-exists",
+          "ruleId": "aws-cloudtrail-trail-log-group-disabled",
           "ruleIndex": 14,
           "stacks": [],
           "taxa": []
@@ -875,7 +920,7 @@
         },
         {
           "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-default-ssl-certificate:vulnerable.tf:145"
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-web-acl-not-exists:vulnerable.tf:115"
           },
           "attachments": [],
           "codeFlows": [],
@@ -897,8 +942,8 @@
                 "region": {
                   "byteOffset": -1,
                   "charOffset": -1,
-                  "endLine": 145,
-                  "startLine": 145
+                  "endLine": 115,
+                  "startLine": 115
                 }
               },
               "properties": {
@@ -909,57 +954,12 @@
           ],
           "message": {
             "arguments": [],
-            "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+            "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
           },
           "rank": -1,
           "relatedLocations": [],
-          "ruleId": "aws-cloudfront-distribution-default-ssl-certificate",
+          "ruleId": "aws-cloudfront-distribution-web-acl-not-exists",
           "ruleIndex": 16,
-          "stacks": [],
-          "taxa": []
-        },
-        {
-          "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-log-group-disabled:vulnerable.tf:85"
-          },
-          "attachments": [],
-          "codeFlows": [],
-          "fixes": [],
-          "graphTraversals": [],
-          "graphs": [],
-          "kind": "fail",
-          "level": "note",
-          "locations": [
-            {
-              "annotations": [],
-              "id": -1,
-              "logicalLocations": [],
-              "physicalLocation": {
-                "artifactLocation": {
-                  "index": -1,
-                  "uri": "vulnerable.tf"
-                },
-                "region": {
-                  "byteOffset": -1,
-                  "charOffset": -1,
-                  "endLine": 85,
-                  "startLine": 85
-                }
-              },
-              "properties": {
-                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
-              },
-              "relationships": []
-            }
-          ],
-          "message": {
-            "arguments": [],
-            "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
-          },
-          "rank": -1,
-          "relatedLocations": [],
-          "ruleId": "aws-cloudtrail-trail-log-group-disabled",
-          "ruleIndex": 17,
           "stacks": [],
           "taxa": []
         },
@@ -1004,13 +1004,13 @@
           "rank": -1,
           "relatedLocations": [],
           "ruleId": "aws-cloudtrail-trail-digest-disabled",
-          "ruleIndex": 18,
+          "ruleIndex": 17,
           "stacks": [],
           "taxa": []
         },
         {
           "partialFingerprints": {
-            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-logging-disabled:vulnerable.tf:108"
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-logging-disabled:vulnerable.tf:115"
           },
           "attachments": [],
           "codeFlows": [],
@@ -1032,8 +1032,8 @@
                 "region": {
                   "byteOffset": -1,
                   "charOffset": -1,
-                  "endLine": 108,
-                  "startLine": 108
+                  "endLine": 115,
+                  "startLine": 115
                 }
               },
               "properties": {
@@ -1049,6 +1049,51 @@
           "rank": -1,
           "relatedLocations": [],
           "ruleId": "aws-cloudfront-distribution-logging-disabled",
+          "ruleIndex": 18,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-default-ssl-certificate:vulnerable.tf:152"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 152,
+                  "startLine": 152
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/0450a03e4288a19a4a6084d60c64c865c07d949b/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudfront-distribution-default-ssl-certificate",
           "ruleIndex": 19,
           "stacks": [],
           "taxa": []
@@ -1265,11 +1310,11 @@
                 "rank": -1
               },
               "fullDescription": {
-                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
               },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_policy#policy",
-              "id": "aws-s3-bucket-https-only-disabled",
-              "name": "S3 Bucket encryption in transit is not enabled",
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup#encryption_option-1",
+              "id": "aws-athena-workgroup-encryption-disabled",
+              "name": "Athena Workgroup query results are not encrypted",
               "properties": {
                 "category": "Data",
                 "security-severity": "5.5",
@@ -1279,7 +1324,7 @@
               },
               "relationships": [],
               "shortDescription": {
-                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
               }
             },
             {
@@ -1313,30 +1358,6 @@
                 "rank": -1
               },
               "fullDescription": {
-                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
-              },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ebs_volume#encrypted",
-              "id": "aws-ec2-volume-encryption-disabled",
-              "name": "EBS Volume is not encrypted with KMS",
-              "properties": {
-                "category": "Data",
-                "security-severity": "5.5",
-                "tags": [
-                  "security"
-                ]
-              },
-              "relationships": [],
-              "shortDescription": {
-                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning",
-                "rank": -1
-              },
-              "fullDescription": {
                 "text": "For S3 buckets with object versioning enabled, you can add another layer of security by enabling Multi-Factor Authentication (MFA) delete. MFA delete enforces two forms of authentication in any request to delete a version or change the versioning state of the bucket.\nMFA delete provides added security if security credentials are compromised and can help prevent accidental bucket deletions.\nFor more information see: Configuring MFA delete (https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html)\n\nNote: You cannot use MFA delete with Lifecycle configurations (https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-and-other-bucket-config.html)."
               },
               "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning#mfa_delete",
@@ -1352,54 +1373,6 @@
               "relationships": [],
               "shortDescription": {
                 "text": "For S3 buckets with object versioning enabled, you can add another layer of security by enabling Multi-Factor Authentication (MFA) delete. MFA delete enforces two forms of authentication in any request to delete a version or change the versioning state of the bucket.\nMFA delete provides added security if security credentials are compromised and can help prevent accidental bucket deletions.\nFor more information see: Configuring MFA delete (https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html)\n\nNote: You cannot use MFA delete with Lifecycle configurations (https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-and-other-bucket-config.html)."
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning",
-                "rank": -1
-              },
-              "fullDescription": {
-                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
-              },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup#encryption_option-1",
-              "id": "aws-athena-workgroup-encryption-disabled",
-              "name": "Athena Workgroup query results are not encrypted",
-              "properties": {
-                "category": "Data",
-                "security-severity": "5.5",
-                "tags": [
-                  "security"
-                ]
-              },
-              "relationships": [],
-              "shortDescription": {
-                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning",
-                "rank": -1
-              },
-              "fullDescription": {
-                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
-              },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration#sse_algorithm",
-              "id": "aws-s3-bucket-encryption-disabled",
-              "name": "S3 Bucket is not encrypted with KMS",
-              "properties": {
-                "category": "Data",
-                "security-severity": "5.5",
-                "tags": [
-                  "security"
-                ]
-              },
-              "relationships": [],
-              "shortDescription": {
-                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
               }
             },
             {
@@ -1433,6 +1406,30 @@
                 "rank": -1
               },
               "fullDescription": {
+                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ebs_volume#encrypted",
+              "id": "aws-ec2-volume-encryption-disabled",
+              "name": "EBS Volume is not encrypted with KMS",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
                 "text": "Automatic rotation should be enabled for KMS customer managed keys in order to reduce the risk of a compromised key. Tenable recommends a timeframe of every 365 days or less."
               },
               "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key#enable_key_rotation",
@@ -1453,17 +1450,65 @@
             {
               "defaultConfiguration": {
                 "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration#sse_algorithm",
+              "id": "aws-s3-bucket-encryption-disabled",
+              "name": "S3 Bucket is not encrypted with KMS",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_policy#policy",
+              "id": "aws-s3-bucket-https-only-disabled",
+              "name": "S3 Bucket encryption in transit is not enabled",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
                 "level": "note",
                 "rank": -1
               },
               "fullDescription": {
-                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
               },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#web_acl_id",
-              "id": "aws-cloudfront-distribution-web-acl-not-exists",
-              "name": "CloudFront Distribution is not associated with WAF web ACL",
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#cloud_watch_logs_group_arn",
+              "id": "aws-cloudtrail-trail-log-group-disabled",
+              "name": "CloudTrail Logs does not publish logs to CloudWatch",
               "properties": {
-                "category": "Network",
+                "category": "Logging",
                 "security-severity": "2.0",
                 "tags": [
                   "security"
@@ -1471,7 +1516,7 @@
               },
               "relationships": [],
               "shortDescription": {
-                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
               }
             },
             {
@@ -1505,11 +1550,11 @@
                 "rank": -1
               },
               "fullDescription": {
-                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
               },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#cloudfront_default_certificate-1",
-              "id": "aws-cloudfront-distribution-default-ssl-certificate",
-              "name": "CloudFront Distribution is using the default SSL certificate",
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#web_acl_id",
+              "id": "aws-cloudfront-distribution-web-acl-not-exists",
+              "name": "CloudFront Distribution is not associated with WAF web ACL",
               "properties": {
                 "category": "Network",
                 "security-severity": "2.0",
@@ -1519,31 +1564,7 @@
               },
               "relationships": [],
               "shortDescription": {
-                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
-              }
-            },
-            {
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note",
-                "rank": -1
-              },
-              "fullDescription": {
-                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
-              },
-              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#cloud_watch_logs_group_arn",
-              "id": "aws-cloudtrail-trail-log-group-disabled",
-              "name": "CloudTrail Logs does not publish logs to CloudWatch",
-              "properties": {
-                "category": "Logging",
-                "security-severity": "2.0",
-                "tags": [
-                  "security"
-                ]
-              },
-              "relationships": [],
-              "shortDescription": {
-                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
+                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
               }
             },
             {
@@ -1592,6 +1613,30 @@
               "relationships": [],
               "shortDescription": {
                 "text": "CloudFront distribution logging should be enabled so that you can audit each request made for your web content and see who accesses your data, and how often, in case of a breach."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#cloudfront_default_certificate-1",
+              "id": "aws-cloudfront-distribution-default-ssl-certificate",
+              "name": "CloudFront Distribution is using the default SSL certificate",
+              "properties": {
+                "category": "Network",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
               }
             },
             {
