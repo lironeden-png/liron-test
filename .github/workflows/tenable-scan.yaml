@@ -1,0 +1,50 @@
+name: Tenable Cloud Security IaC Scan
+on: [ pull_request, push ]
+
+jobs:
+  scan:
+    name: Ermetic
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      contents: read
+      actions: read
+    env:
+      SCANNER_IMAGE: docker-tmpcshub-local.artifactory.eng.tenable.com/scanner:1.214.132.64865-leden-bugfix-code-scanner-sarif-output-invalid
+      API_URL: https://app.dev.t.io/
+      API_TOKEN: ${{ secrets.TENABLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to Artifactory
+        run: echo "${{ secrets.ARTIFACTORY_PASSWORD }}" | docker login docker-tmpcshub-local.artifactory.eng.tenable.com --username "${{ secrets.ARTIFACTORY_USERNAME }}" --password-stdin
+
+      - name: Run Tenable IaC scan
+        run: |
+          docker run --rm \
+            --workdir /tmp/tenable \
+            --volume "${{ github.workspace }}":/tmp/tenable \
+            --pull=always \
+            "$SCANNER_IMAGE" \
+            iac scan \
+            --path /tmp/tenable \
+            --code-branch "${{ github.head_ref || github.ref_name }}" \
+            --code-commit-hash "${{ github.event.pull_request.head.sha || github.sha }}" \
+            --code-commit-user "${{ github.actor }}" \
+            --code-repository-url "${{ github.server_url }}/${{ github.repository }}" \
+            --pipeline-run-trigger "${{ github.event_name == 'pull_request' && 'pr' || 'push' }}" \
+            --pipeline-run-id "${{ github.run_id }}" \
+            --pipeline-run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --output-path /tmp/tenable \
+            --output-file-formats Sarif \
+            --api-url "$API_URL" \
+            --api-token "$API_TOKEN" \
+            --logs
+
+      - name: Display SARIF
+        run: cat "${{ github.workspace }}/results.sarif"
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif
