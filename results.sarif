@@ -1,0 +1,1704 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "addresses": [],
+      "automationDetails": {
+        "id": "code-scanner/iac/"
+      },
+      "graphs": [],
+      "invocations": [],
+      "language": "en-US",
+      "logicalLocations": [],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ],
+      "policies": [],
+      "redactionTokens": [],
+      "results": [
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-kms-key-public-access-exists:vulnerable.tf:15"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 15,
+                  "startLine": 15
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "KMS key resource policy should allow access only to specific identities and accounts."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-kms-key-public-access-exists",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-role-public-access-exists:vulnerable.tf:29"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 29,
+                  "startLine": 29
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM role trust policy defines which principals can assume the role and get temporary credentials in order to use its permissions, it should allow access only to specific identities and accounts."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-role-public-access-exists",
+          "ruleIndex": 1,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-public-access-exists:vulnerable.tf:70"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 70,
+                  "startLine": 70
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\nIf the bucket is public by design, you can exclude it and Tenable Cloud Security will not alert on it anymore."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-public-access-exists",
+          "ruleIndex": 2,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-instance-inbound-external-access:vulnerable.tf:74"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 74,
+                  "startLine": 74
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "EC2 instances should be accessible directly only by specific IP addresses.\nAn EC2 instance is considered exposed to the internet if it has a public IP address, Security Group, and NACL rules allowing network inbound access to an external IP range of more than 65,535 addresses, and is part of a public subnet."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-instance-inbound-external-access",
+          "ruleIndex": 3,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-instance-user-data-secret-exists:vulnerable.tf:77"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 77,
+                  "startLine": 77
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "EC2 instances should store sensitive data like passwords and access tokens using Secrets Manager secrets and not in clear text via user data."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-instance-user-data-secret-exists",
+          "ruleIndex": 4,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-bucket-public-access-enabled:vulnerable.tf:70"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "error",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 70,
+                  "startLine": 70
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudTrail S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\n\nNote: in order to evaluate the policy, Tenable Cloud Security must have access to the AWS account of the target S3 bucket."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudtrail-trail-bucket-public-access-enabled",
+          "ruleIndex": 5,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-encryption-disabled:vulnerable.tf:85"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 85,
+                  "startLine": 85
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudTrail S3 buckets should have encryption at rest enabled using customer managed keys (CMK)."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudtrail-trail-encryption-disabled",
+          "ruleIndex": 6,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-athena-workgroup-encryption-disabled:vulnerable.tf:92"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 92,
+                  "startLine": 92
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-athena-workgroup-encryption-disabled",
+          "ruleIndex": 7,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-object-mfa-delete-disabled:vulnerable.tf:64"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 64,
+                  "startLine": 64
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "For S3 buckets with object versioning enabled, you can add another layer of security by enabling Multi-Factor Authentication (MFA) delete. MFA delete enforces two forms of authentication in any request to delete a version or change the versioning state of the bucket.\nMFA delete provides added security if security credentials are compromised and can help prevent accidental bucket deletions.\nFor more information see: Configuring MFA delete (https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html)\n\nNote: You cannot use MFA delete with Lifecycle configurations (https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-and-other-bucket-config.html)."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-object-mfa-delete-disabled",
+          "ruleIndex": 8,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-kms-key-rotation-disabled:vulnerable.tf:13"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 13,
+                  "startLine": 13
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "Automatic rotation should be enabled for KMS customer managed keys in order to reduce the risk of a compromised key. Tenable recommends a timeframe of every 365 days or less."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-kms-key-rotation-disabled",
+          "ruleIndex": 9,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-https-only-disabled:vulnerable.tf:64"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 64,
+                  "startLine": 64
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-https-only-disabled",
+          "ruleIndex": 10,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-https-only-disabled:vulnerable.tf:128"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 128,
+                  "startLine": 128
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to enable HTTPS connections between CloudFront viewers and distributions.\nHTTPS connections provide a layer of security by encrypting data transfer."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudfront-distribution-https-only-disabled",
+          "ruleIndex": 11,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-s3-bucket-encryption-disabled:vulnerable.tf:64"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 64,
+                  "startLine": 64
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-s3-bucket-encryption-disabled",
+          "ruleIndex": 12,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-volume-encryption-disabled:vulnerable.tf:100"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 100,
+                  "startLine": 100
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-volume-encryption-disabled",
+          "ruleIndex": 13,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-sqs-queue-encryption-disabled:new_finding.tf:7"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "warning",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "new_finding.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 7,
+                  "startLine": 7
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/new_finding.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "SQS queues should have encryption at rest enabled using Key Management Service (KMS)."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-sqs-queue-encryption-disabled",
+          "ruleIndex": 14,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-default-ssl-certificate:vulnerable.tf:145"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 145,
+                  "startLine": 145
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudfront-distribution-default-ssl-certificate",
+          "ruleIndex": 15,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-digest-disabled:vulnerable.tf:85"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 85,
+                  "startLine": 85
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudTrail S3 bucket log file validation should be enabled to provide integrity checks for logs."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudtrail-trail-digest-disabled",
+          "ruleIndex": 16,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-logging-disabled:vulnerable.tf:108"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 108,
+                  "startLine": 108
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudFront distribution logging should be enabled so that you can audit each request made for your web content and see who accesses your data, and how often, in case of a breach."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudfront-distribution-logging-disabled",
+          "ruleIndex": 17,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudfront-distribution-web-acl-not-exists:vulnerable.tf:108"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 108,
+                  "startLine": 108
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudfront-distribution-web-acl-not-exists",
+          "ruleIndex": 18,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-cloudtrail-trail-log-group-disabled:vulnerable.tf:85"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 85,
+                  "startLine": 85
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-cloudtrail-trail-log-group-disabled",
+          "ruleIndex": 19,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:1"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 1,
+                  "startLine": 1
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 20,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:6"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 6,
+                  "startLine": 6
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 20,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:11"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 11,
+                  "startLine": 11
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 20,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:16"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 16,
+                  "startLine": 16
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 20,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-ec2-instance-instance-profile-not-exist:vulnerable.tf:74"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "vulnerable.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 74,
+                  "startLine": 74
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/6daa81d72237a2270e539eeb89701abbea27bde3/vulnerable.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "It is recommended to attach the instance to a role which has an appropriate permissions for the required access rather than encoding AWS keys into AWS API calls. Amazon EC2 uses an instance profile as a container for an IAM role."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-ec2-instance-instance-profile-not-exist",
+          "ruleIndex": 21,
+          "stacks": [],
+          "taxa": []
+        }
+      ],
+      "runAggregates": [],
+      "taxonomies": [],
+      "threadFlowLocations": [],
+      "tool": {
+        "driver": {
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false,
+          "language": "en-US",
+          "locations": [],
+          "name": "code-scanner",
+          "notifications": [],
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "KMS key resource policy should allow access only to specific identities and accounts."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key#policy",
+              "id": "aws-kms-key-public-access-exists",
+              "name": "Public KMS Key",
+              "properties": {
+                "category": "Data",
+                "security-severity": "9.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "KMS key resource policy should allow access only to specific identities and accounts."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "IAM role trust policy defines which principals can assume the role and get temporary credentials in order to use its permissions, it should allow access only to specific identities and accounts."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role",
+              "id": "aws-iam-role-public-access-exists",
+              "name": "Public IAM Role",
+              "properties": {
+                "category": "IAM",
+                "security-severity": "9.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "IAM role trust policy defines which principals can assume the role and get temporary credentials in order to use its permissions, it should allow access only to specific identities and accounts."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\nIf the bucket is public by design, you can exclude it and Tenable Cloud Security will not alert on it anymore."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_acl#acl",
+              "id": "aws-s3-bucket-public-access-exists",
+              "name": "Public S3 Bucket",
+              "properties": {
+                "category": "Data",
+                "security-severity": "8.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\nIf the bucket is public by design, you can exclude it and Tenable Cloud Security will not alert on it anymore."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "EC2 instances should be accessible directly only by specific IP addresses.\nAn EC2 instance is considered exposed to the internet if it has a public IP address, Security Group, and NACL rules allowing network inbound access to an external IP range of more than 65,535 addresses, and is part of a public subnet."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#associate_public_ip_address",
+              "id": "aws-ec2-instance-inbound-external-access",
+              "name": "EC2 Instance is exposed to the internet",
+              "properties": {
+                "category": "Network",
+                "security-severity": "8.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "EC2 instances should be accessible directly only by specific IP addresses.\nAn EC2 instance is considered exposed to the internet if it has a public IP address, Security Group, and NACL rules allowing network inbound access to an external IP range of more than 65,535 addresses, and is part of a public subnet."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "EC2 instances should store sensitive data like passwords and access tokens using Secrets Manager secrets and not in clear text via user data."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#user_data",
+              "id": "aws-ec2-instance-user-data-secret-exists",
+              "name": "EC2 Instance is exposing secrets",
+              "properties": {
+                "category": "Secrets",
+                "security-severity": "8.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "EC2 instances should store sensitive data like passwords and access tokens using Secrets Manager secrets and not in clear text via user data."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudTrail S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\n\nNote: in order to evaluate the policy, Tenable Cloud Security must have access to the AWS account of the target S3 bucket."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_acl#acl",
+              "id": "aws-cloudtrail-trail-bucket-public-access-enabled",
+              "name": "Public CloudTrail S3 Bucket",
+              "properties": {
+                "category": "Logging",
+                "security-severity": "8.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudTrail S3 bucket policy or Access Control List (ACL) should allow access only to specific identities and accounts.\n\nNote: in order to evaluate the policy, Tenable Cloud Security must have access to the AWS account of the target S3 bucket."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudTrail S3 buckets should have encryption at rest enabled using customer managed keys (CMK)."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#kms_key_id",
+              "id": "aws-cloudtrail-trail-encryption-disabled",
+              "name": "CloudTrail Logs are not encrypted with CMK",
+              "properties": {
+                "category": "Logging",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudTrail S3 buckets should have encryption at rest enabled using customer managed keys (CMK)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/athena_workgroup#encryption_option-1",
+              "id": "aws-athena-workgroup-encryption-disabled",
+              "name": "Athena Workgroup query results are not encrypted",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "Athena workgroup should have encryption at rest enabled to ensure query results are protected."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "For S3 buckets with object versioning enabled, you can add another layer of security by enabling Multi-Factor Authentication (MFA) delete. MFA delete enforces two forms of authentication in any request to delete a version or change the versioning state of the bucket.\nMFA delete provides added security if security credentials are compromised and can help prevent accidental bucket deletions.\nFor more information see: Configuring MFA delete (https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html)\n\nNote: You cannot use MFA delete with Lifecycle configurations (https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-and-other-bucket-config.html)."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning#mfa_delete",
+              "id": "aws-s3-bucket-object-mfa-delete-disabled",
+              "name": "S3 Bucket MFA delete is not enabled",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "For S3 buckets with object versioning enabled, you can add another layer of security by enabling Multi-Factor Authentication (MFA) delete. MFA delete enforces two forms of authentication in any request to delete a version or change the versioning state of the bucket.\nMFA delete provides added security if security credentials are compromised and can help prevent accidental bucket deletions.\nFor more information see: Configuring MFA delete (https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html)\n\nNote: You cannot use MFA delete with Lifecycle configurations (https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-and-other-bucket-config.html)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "Automatic rotation should be enabled for KMS customer managed keys in order to reduce the risk of a compromised key. Tenable recommends a timeframe of every 365 days or less."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key#enable_key_rotation",
+              "id": "aws-kms-key-rotation-disabled",
+              "name": "KMS Key automatic key rotation is not enabled",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "Automatic rotation should be enabled for KMS customer managed keys in order to reduce the risk of a compromised key. Tenable recommends a timeframe of every 365 days or less."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_policy#policy",
+              "id": "aws-s3-bucket-https-only-disabled",
+              "name": "S3 Bucket encryption in transit is not enabled",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to enable HTTPS connections on your S3 Bucket. HTTPS connections provide a layer of security by encrypting data transfer.\nBucket policy should allow only encrypted connections over HTTPS using the aws:SecureTransport condition."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to enable HTTPS connections between CloudFront viewers and distributions.\nHTTPS connections provide a layer of security by encrypting data transfer."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#viewer_protocol_policy",
+              "id": "aws-cloudfront-distribution-https-only-disabled",
+              "name": "CloudFront Distribution viewer encryption in transit is not enabled",
+              "properties": {
+                "category": "Network",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to enable HTTPS connections between CloudFront viewers and distributions.\nHTTPS connections provide a layer of security by encrypting data transfer."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration#sse_algorithm",
+              "id": "aws-s3-bucket-encryption-disabled",
+              "name": "S3 Bucket is not encrypted with KMS",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "S3 buckets should have encryption at rest enabled using Key Management Service (KMS)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ebs_volume#encrypted",
+              "id": "aws-ec2-volume-encryption-disabled",
+              "name": "EBS Volume is not encrypted with KMS",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "EBS volumes should have encryption at rest enabled using Key Management Service (KMS).\nNew EBS volumes can also be encrypted by default for the entire region, for more information see: Amazon EBS encryption (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default)"
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "SQS queues should have encryption at rest enabled using Key Management Service (KMS)."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sqs_queue",
+              "id": "aws-sqs-queue-encryption-disabled",
+              "name": "SQS Queue is not encrypted with KMS",
+              "properties": {
+                "category": "Data",
+                "security-severity": "5.5",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "SQS queues should have encryption at rest enabled using Key Management Service (KMS)."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#cloudfront_default_certificate-1",
+              "id": "aws-cloudfront-distribution-default-ssl-certificate",
+              "name": "CloudFront Distribution is using the default SSL certificate",
+              "properties": {
+                "category": "Network",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to use a custom SSL certificate instead of the default certificate. This will allow your users to access content using alternative domain names, ensuring secure communication over HTTPS with a personalized certificate."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudTrail S3 bucket log file validation should be enabled to provide integrity checks for logs."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#enable_log_file_validation",
+              "id": "aws-cloudtrail-trail-digest-disabled",
+              "name": "CloudTrail S3 Bucket log file validation is not enabled",
+              "properties": {
+                "category": "Logging",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudTrail S3 bucket log file validation should be enabled to provide integrity checks for logs."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudFront distribution logging should be enabled so that you can audit each request made for your web content and see who accesses your data, and how often, in case of a breach."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#logging_config",
+              "id": "aws-cloudfront-distribution-logging-disabled",
+              "name": "CloudFront Distribution logging is not enabled",
+              "properties": {
+                "category": "Logging",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudFront distribution logging should be enabled so that you can audit each request made for your web content and see who accesses your data, and how often, in case of a breach."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution#web_acl_id",
+              "id": "aws-cloudfront-distribution-web-acl-not-exists",
+              "name": "CloudFront Distribution is not associated with WAF web ACL",
+              "properties": {
+                "category": "Network",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudFront distributions should be associated with AWS WAF web ACL, which protects web applications and APIs from threats, and enables you to control how traffic reaches your applications."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail#cloud_watch_logs_group_arn",
+              "id": "aws-cloudtrail-trail-log-group-disabled",
+              "name": "CloudTrail Logs does not publish logs to CloudWatch",
+              "properties": {
+                "category": "Logging",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "CloudTrail should be configured to send logs to CloudWatch Logs in order to facilitate real-time and historic activity logging based on user, API, resource, and IP address, and to provide an opportunity to establish alarms and notifications for anomalous or sensitivity account activity."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user_policy_attachment#user-4",
+              "id": "aws-iam-user-attached-policy",
+              "name": "IAM User has policies attached",
+              "properties": {
+                "category": "IAM",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+              }
+            },
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "It is recommended to attach the instance to a role which has an appropriate permissions for the required access rather than encoding AWS keys into AWS API calls. Amazon EC2 uses an instance profile as a container for an IAM role."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#iam_instance_profile-1",
+              "id": "aws-ec2-instance-instance-profile-not-exist",
+              "name": "EC2 Instance IAM Instance Profile is not set",
+              "properties": {
+                "category": "IAM",
+                "security-severity": "0.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "It is recommended to attach the instance to a role which has an appropriate permissions for the required access rather than encoding AWS keys into AWS API calls. Amazon EC2 uses an instance profile as a container for an IAM role."
+              }
+            }
+          ],
+          "supportedTaxonomies": [],
+          "taxa": [],
+          "version": "0.0.0"
+        },
+        "extensions": []
+      },
+      "translations": [],
+      "versionControlProvenance": [],
+      "webRequests": [],
+      "webResponses": []
+    }
+  ],
+  "properties": {}
+}
