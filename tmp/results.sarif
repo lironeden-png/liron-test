@@ -1,0 +1,3990 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "addresses": [],
+      "automationDetails": {
+        "id": "code-scanner/iac/"
+      },
+      "graphs": [],
+      "invocations": [],
+      "language": "en-US",
+      "logicalLocations": [],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ],
+      "policies": [],
+      "redactionTokens": [],
+      "results": [
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:1"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 1,
+                  "startLine": 1
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:6"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 6,
+                  "startLine": 6
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:11"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 11,
+                  "startLine": 11
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:16"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 16,
+                  "startLine": 16
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:21"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 21,
+                  "startLine": 21
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:26"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 26,
+                  "startLine": 26
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:31"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 31,
+                  "startLine": 31
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:36"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 36,
+                  "startLine": 36
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:41"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 41,
+                  "startLine": 41
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:46"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 46,
+                  "startLine": 46
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:51"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 51,
+                  "startLine": 51
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:56"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 56,
+                  "startLine": 56
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:61"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 61,
+                  "startLine": 61
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:66"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 66,
+                  "startLine": 66
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:71"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 71,
+                  "startLine": 71
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:76"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 76,
+                  "startLine": 76
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:81"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 81,
+                  "startLine": 81
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:86"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 86,
+                  "startLine": 86
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:91"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 91,
+                  "startLine": 91
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:96"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 96,
+                  "startLine": 96
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:101"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 101,
+                  "startLine": 101
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:106"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 106,
+                  "startLine": 106
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:111"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 111,
+                  "startLine": 111
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:116"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 116,
+                  "startLine": 116
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:121"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 121,
+                  "startLine": 121
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:126"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 126,
+                  "startLine": 126
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:131"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 131,
+                  "startLine": 131
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:136"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 136,
+                  "startLine": 136
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:141"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 141,
+                  "startLine": 141
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:146"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 146,
+                  "startLine": 146
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:151"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 151,
+                  "startLine": 151
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:156"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 156,
+                  "startLine": 156
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:161"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 161,
+                  "startLine": 161
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:166"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 166,
+                  "startLine": 166
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:171"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 171,
+                  "startLine": 171
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:176"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 176,
+                  "startLine": 176
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:181"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 181,
+                  "startLine": 181
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:186"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 186,
+                  "startLine": 186
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:191"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 191,
+                  "startLine": 191
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:196"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 196,
+                  "startLine": 196
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:201"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 201,
+                  "startLine": 201
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:206"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 206,
+                  "startLine": 206
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:211"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 211,
+                  "startLine": 211
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:216"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 216,
+                  "startLine": 216
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:221"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 221,
+                  "startLine": 221
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:226"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 226,
+                  "startLine": 226
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:231"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 231,
+                  "startLine": 231
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:236"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 236,
+                  "startLine": 236
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:241"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 241,
+                  "startLine": 241
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:246"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 246,
+                  "startLine": 246
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:251"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 251,
+                  "startLine": 251
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:256"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 256,
+                  "startLine": 256
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:261"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 261,
+                  "startLine": 261
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:266"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 266,
+                  "startLine": 266
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:271"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 271,
+                  "startLine": 271
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:276"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 276,
+                  "startLine": 276
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:281"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 281,
+                  "startLine": 281
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:286"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 286,
+                  "startLine": 286
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:291"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 291,
+                  "startLine": 291
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:296"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 296,
+                  "startLine": 296
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:301"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 301,
+                  "startLine": 301
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:306"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 306,
+                  "startLine": 306
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:311"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 311,
+                  "startLine": 311
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:316"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 316,
+                  "startLine": 316
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:321"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 321,
+                  "startLine": 321
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:326"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 326,
+                  "startLine": 326
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:331"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 331,
+                  "startLine": 331
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:336"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 336,
+                  "startLine": 336
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:341"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 341,
+                  "startLine": 341
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:346"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 346,
+                  "startLine": 346
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:351"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 351,
+                  "startLine": 351
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:356"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 356,
+                  "startLine": 356
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:361"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 361,
+                  "startLine": 361
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:366"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 366,
+                  "startLine": 366
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:371"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 371,
+                  "startLine": 371
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:376"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 376,
+                  "startLine": 376
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:381"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 381,
+                  "startLine": 381
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:386"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 386,
+                  "startLine": 386
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:391"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 391,
+                  "startLine": 391
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:396"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 396,
+                  "startLine": 396
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:401"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 401,
+                  "startLine": 401
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:406"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 406,
+                  "startLine": 406
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:411"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 411,
+                  "startLine": 411
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:416"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 416,
+                  "startLine": 416
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:421"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 421,
+                  "startLine": 421
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:426"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 426,
+                  "startLine": 426
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        },
+        {
+          "partialFingerprints": {
+            "codeScanner/resourceRiskV1": "aws-iam-user-attached-policy:attachment.tf:431"
+          },
+          "attachments": [],
+          "codeFlows": [],
+          "fixes": [],
+          "graphTraversals": [],
+          "graphs": [],
+          "kind": "fail",
+          "level": "note",
+          "locations": [
+            {
+              "annotations": [],
+              "id": -1,
+              "logicalLocations": [],
+              "physicalLocation": {
+                "artifactLocation": {
+                  "index": -1,
+                  "uri": "attachment.tf"
+                },
+                "region": {
+                  "byteOffset": -1,
+                  "charOffset": -1,
+                  "endLine": 431,
+                  "startLine": 431
+                }
+              },
+              "properties": {
+                "fileUrl": "https://github.com/lironeden-png/liron-test/blob/abbdaa8f747042a7fb883ead6478538970f145fa/attachment.tf"
+              },
+              "relationships": []
+            }
+          ],
+          "message": {
+            "arguments": [],
+            "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+          },
+          "rank": -1,
+          "relatedLocations": [],
+          "ruleId": "aws-iam-user-attached-policy",
+          "ruleIndex": 0,
+          "stacks": [],
+          "taxa": []
+        }
+      ],
+      "runAggregates": [],
+      "taxonomies": [],
+      "threadFlowLocations": [],
+      "tool": {
+        "driver": {
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false,
+          "language": "en-US",
+          "locations": [],
+          "name": "code-scanner",
+          "notifications": [],
+          "rules": [
+            {
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note",
+                "rank": -1
+              },
+              "fullDescription": {
+                "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+              },
+              "helpUri": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user_policy_attachment#user-4",
+              "id": "aws-iam-user-attached-policy",
+              "name": "IAM User has policies attached",
+              "properties": {
+                "category": "IAM",
+                "security-severity": "2.0",
+                "tags": [
+                  "security"
+                ]
+              },
+              "relationships": [],
+              "shortDescription": {
+                "text": "IAM users should be assigned with group membership, rather than having a direct IAM policy attached. Assigning IAM policy only through groups unifies permissions management to a single, flexible layer consistent with organizational functional roles. By unifying permissions management, the likelihood of excessive permissions is reduced."
+              }
+            }
+          ],
+          "supportedTaxonomies": [],
+          "taxa": [],
+          "version": "0.0.0"
+        },
+        "extensions": []
+      },
+      "translations": [],
+      "versionControlProvenance": [],
+      "webRequests": [],
+      "webResponses": []
+    }
+  ],
+  "properties": {}
+}
