@@ -101,7 +101,7 @@ resource "aws_ebs_volume" "unencrypted" {
 }
 
 # EBS volume without encryption -> Medium
-resource "aws_ebs_volume" "unencrypted" {
+resource "aws_ebs_volume" "unencrypted_2" {
   availability_zone = "us-east-1a"
   size              = 10
   encrypted         = false
