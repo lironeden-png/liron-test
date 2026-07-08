@@ -93,6 +93,13 @@ resource "aws_athena_workgroup" "unencrypted" {
   name = "unencrypted-wg"
 }
 
+# ---------------------------------------------------------------------------
+# Fingerprint dedup test: the comment lines below intentionally shift the line
+# numbers of this finding (and the CloudFront findings after it) downward.
+# With partialFingerprints removed, GitHub should update the SAME alerts to the
+# new lines rather than opening duplicates.
+# ---------------------------------------------------------------------------
+
 # EBS volume without encryption -> Medium
 resource "aws_ebs_volume" "unencrypted" {
   availability_zone = "us-east-1a"
