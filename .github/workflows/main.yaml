@@ -10,8 +10,7 @@ jobs:
       contents: read
       actions: read
     env:
-      SCANNER_IMAGE: docker-tmpcshub-local.artifactory.eng.tenable.com/scanner:1.215.59.53321-leden-bugfix-code-scanner-sarif-output-invalid
-      API_URL: https://app.dev.t.io/
+      SCANNER_IMAGE: docker-tmpcshub-local.artifactory.eng.tenable.com/scanner:1.215.60.47558-leden-bugfix-code-scanner-sarif-output-invalid
       API_TOKEN: ${{ secrets.TENABLE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
