@@ -6,6 +6,22 @@ provider "aws" {
 }
 
 #############################################
+# NEW (top-insert) — shifts every finding below down a line
+#############################################
+
+# Unencrypted RDS instance -> Medium (aws-rds-instance-encryption-disabled)
+resource "aws_db_instance" "unencrypted" {
+  identifier          = "liron-test-unencrypted-db"
+  engine              = "mysql"
+  instance_class      = "db.t3.micro"
+  allocated_storage   = 20
+  username            = "admin"
+  password            = "changeme123!"
+  skip_final_snapshot = true
+  storage_encrypted   = false
+}
+
+#############################################
 # CRITICAL — public IAM / KMS exposure
 #############################################
 
