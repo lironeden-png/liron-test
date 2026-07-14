@@ -5,6 +5,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
+# TOP-INSERT TEST — unencrypted EBS volume added at TOP of file -> Medium
+resource "aws_ebs_volume" "top_insert_test" {
+  availability_zone = "us-east-1c"
+  size              = 24
+  encrypted         = false
+}
+
 #############################################
 # CRITICAL — public IAM / KMS exposure
 #############################################
