@@ -152,3 +152,10 @@ resource "aws_cloudfront_distribution" "no_logging" {
     cloudfront_default_certificate = true
   }
 }
+
+# APPEND TEST — unencrypted EBS volume added at END of file -> Medium
+resource "aws_ebs_volume" "append_test" {
+  availability_zone = "us-east-1b"
+  size              = 16
+  encrypted         = false
+}
